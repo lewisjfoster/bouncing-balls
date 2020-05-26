@@ -8,18 +8,14 @@ const App = () => {
     const [bouncyBalls, setBouncyBalls] = useState([]);
 
     const addNewBall = (e) => {
-        setBouncyBalls([...bouncyBalls, { id: bouncyBalls.length, x: e.clientX, y: e.clientY }]);
-    };
-
-    const renderBalls = () => {
-        const balls = bouncyBalls.map((ball) => <BouncyBall key={ball.id} initialX={ball.x} initialY={ball.y} />);
-
-        return balls;
+        setBouncyBalls([...bouncyBalls, { id: bouncyBalls.length + 1, x: e.clientX, y: e.clientY }]);
     };
 
     return (
         <div className={styles.clickableArea} onClick={addNewBall}>
-            {renderBalls()}
+            {bouncyBalls.map((ball) => (
+                <BouncyBall key={ball.id} initialX={ball.x} initialY={ball.y} />
+            ))}
         </div>
     );
 };
