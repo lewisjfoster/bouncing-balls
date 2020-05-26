@@ -1,3 +1,12 @@
+# [1.2.0](https://github.com/lewisjfoster/bouncing-balls/compare/v1.1.1...v1.2.0) (2020-05-26)
+
+
+### Features
+
+* added header with counter ([786e2f0](https://github.com/lewisjfoster/bouncing-balls/commit/786e2f097fff160332cd4bf949a0bcec00f8f9ef))
+
+
+
 ## [1.1.1](https://github.com/lewisjfoster/bouncing-balls/compare/v1.1.0...v1.1.1) (2020-05-26)
 
 
