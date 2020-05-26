@@ -1,6 +1,7 @@
-# React Template
+# Bouncing Balls
 
-A template for React projects. This template contains features to make development easier and more consistant.
+Bouncing Balls is a React based application that simulates the behaviour of a bouncy ball.
+When the user clicks on the screen a ball will appear and bounce until it comes to a stop at the bottom of the screen. (The ball may bounce out off the screen). The application can handle multiple balls at the same time, each with a random speed.
 
 ## Getting Started
 
@@ -8,7 +9,14 @@ A template for React projects. This template contains features to make developme
 
 ### Installation
 
-1. Consume the template when creating a `GitHub` repo
+1. Clone the repo
+
+git clone https://github.com/lewisjfoster/bouncing-balls.git
+
+cd bouncing-balls
+
+npm install
+
 2. Install packages
 
 ```
