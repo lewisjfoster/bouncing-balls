@@ -1,0 +1,33 @@
+body {
+    margin: 0;
+    overflow: hidden;
+    font-family: Calibri, Helvetica, sans-serif;
+}
+
+.App__clickableArea___2iPiU {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #dfe6e9;
+}
+
+.Header__header___1qRCL {
+    position: fixed;
+    width: 100%;
+    text-align: center;
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+}
+
+.BouncyBall__ball___vyjPn {
+    position: absolute;
+    border-radius: 50%;
+    width: 5px;
+    height: 5px;
+    background-color: black;
+}
+
