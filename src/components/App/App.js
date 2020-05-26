@@ -1,7 +1,9 @@
 import React, { useState } from 'react';
 
 import styles from './App.css';
+import lang from '../../libs/lang';
 
+import Header from '../Header';
 import BouncyBall from '../BouncyBall';
 
 const App = () => {
@@ -13,6 +15,7 @@ const App = () => {
 
     return (
         <div className={styles.clickableArea} onClick={addNewBall}>
+            <Header title={lang.title + bouncyBalls.length} onClick={addNewBall} />
             {bouncyBalls.map((ball) => (
                 <BouncyBall key={ball.id} initialX={ball.x} initialY={ball.y} />
             ))}
