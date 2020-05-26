@@ -1,3 +1,12 @@
+# [1.3.0](https://github.com/lewisjfoster/bouncing-balls/compare/v1.2.0...v1.3.0) (2020-05-26)
+
+
+### Features
+
+* added github pages config ([a37bab5](https://github.com/lewisjfoster/bouncing-balls/commit/a37bab5c7928628ffa8ce7ad9fdc5b15f1a73be3))
+
+
+
 # [1.2.0](https://github.com/lewisjfoster/bouncing-balls/compare/v1.1.1...v1.2.0) (2020-05-26)
 
 
