@@ -1,3 +1,3 @@
 export default {
-    title: 'Hello World!',
+    title: 'Bouncing balls: ',
 };
