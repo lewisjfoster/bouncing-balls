@@ -1,5 +1,7 @@
 # Bouncing Balls
 
+[Live Demo](https://lewisjfoster.github.io/bouncing-balls/)
+
 Bouncing Balls is a React based application that simulates the behaviour of a bouncy ball.
 When the user clicks on the screen a ball will appear and bounce until it comes to a stop at the bottom of the screen. (The ball may bounce out off the screen). The application can handle multiple balls at the same time, each with a random speed.
 
@@ -11,11 +13,13 @@ When the user clicks on the screen a ball will appear and bounce until it comes 
 
 1. Clone the repo
 
+```
 git clone https://github.com/lewisjfoster/bouncing-balls.git
 
 cd bouncing-balls
 
 npm install
+```
 
 2. Install packages
 
