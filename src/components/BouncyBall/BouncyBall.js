@@ -1,57 +1,50 @@
-import React, { Component } from 'react';
+import React, { useState, useEffect } from 'react';
 import PropTypes from 'prop-types';
 
 import styles from './BouncyBall.css';
 
 const generateRandomNumber = (max, min) => Math.random() * (max - min) + min;
 
-class BouncyBall extends Component {
-    constructor(props) {
-        super(props);
+const BouncyBall = ({ initialX, initialY }) => {
+    const [x, setX] = useState(initialX);
+    const [xSpeed, setXSpeed] = useState(generateRandomNumber(1, 5));
 
-        this.state = {
-            x: this.props.initialX,
-            xSpeed: generateRandomNumber(1, 5),
-            y: this.props.initialY,
-            ySpeed: -generateRandomNumber(5, 10),
-        };
-    }
+    const [y, setY] = useState(initialY);
+    const [ySpeed, setYSpeed] = useState(-generateRandomNumber(5, 10));
 
-    componentDidMount() {
+    useEffect(() => {
         const maxY = window.innerHeight - 5;
 
         const bouncing = setInterval(() => {
-            const { x, y } = this.state;
-            let { xSpeed, ySpeed } = this.state;
+            let newXSpeed = xSpeed;
+            let newYSpeed = ySpeed;
 
-            if (xSpeed < 0.05) {
-                this.setState({ y: maxY });
+            if (xSpeed < 0.025) {
+                setY(maxY);
                 clearTimeout(bouncing);
-            }
+            } else {
+                if (y > maxY) {
+                    newXSpeed = xSpeed * 0.8;
+                    newYSpeed = -Math.abs(ySpeed) * 0.9;
+                }
 
-            if (y > maxY) {
-                xSpeed *= 0.8;
-                ySpeed = -Math.abs(ySpeed) * 0.75;
+                setX(x + xSpeed);
+                setY(y + ySpeed);
+                setXSpeed(newXSpeed);
+                setYSpeed(newYSpeed + 0.25);
             }
-
-            this.setState({
-                x: x + xSpeed,
-                xSpeed,
-                y: y + ySpeed,
-                ySpeed: ySpeed + 0.25,
-            });
         }, 10);
-    }
 
-    render() {
-        const spanStyle = {
-            left: this.state.x,
-            top: this.state.y,
-        };
+        return () => clearInterval(bouncing);
+    });
 
-        return <span className={styles.ball} style={spanStyle} />;
-    }
-}
+    const spanStyle = {
+        left: x,
+        top: y,
+    };
+
+    return <span className={styles.ball} style={spanStyle} />;
+};
 
 BouncyBall.propTypes = {
     initialX: PropTypes.number.isRequired,
