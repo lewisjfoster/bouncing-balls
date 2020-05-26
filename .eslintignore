@@ -1,0 +1,10 @@
+node_modules
+**/dist/**
+**dist**
+dist
+webpack.config.js
+mocks
+.github
+*.json
+*.css
+*.html
