@@ -1,3 +1,12 @@
+## [1.3.1](https://github.com/lewisjfoster/bouncing-balls/compare/v1.3.0...v1.3.1) (2020-05-27)
+
+
+### Bug Fixes
+
+* modified font-family ([a0ceb18](https://github.com/lewisjfoster/bouncing-balls/commit/a0ceb189279001e04ab6cd3d4ee8def1f1144fac))
+
+
+
 # [1.3.0](https://github.com/lewisjfoster/bouncing-balls/compare/v1.2.0...v1.3.0) (2020-05-26)
 
 
@@ -26,10 +35,6 @@
 ### Features
 
 * initial structure ([97bdf23](https://github.com/lewisjfoster/bouncing-balls/commit/97bdf23bf2714dce69ead7bd11dc8f1d500aca40))
-
-
-
-## 1.0.1 (2020-05-26)
 
 
 
