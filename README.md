@@ -11,7 +11,7 @@ When the user clicks on the screen a ball will appear and bounce until it comes 
 
 ### Installation
 
-1. Clone the repo
+1. Setup the repo
 
 ```
 git clone https://github.com/lewisjfoster/bouncing-balls.git
@@ -21,27 +21,19 @@ cd bouncing-balls
 npm install
 ```
 
-2. Install packages
-
-```
-yarn install
-```
-
-3. To start a development server
+2. To start a development server
 
 ```
 yarn start
 ```
 
-4. To build for production
+3. To build for production
 
 ```
 yarn build
 ```
 
 ## Testing
-
-This project uses `jest` and `enzyme` for testing. Run the tests via the command
 
 ```
 yarn test
