@@ -1,3 +1,12 @@
+# [1.4.0](https://github.com/lewisjfoster/bouncing-balls/compare/v1.3.2...v1.4.0) (2020-06-02)
+
+
+### Features
+
+* add GitHub button ([a498ef3](https://github.com/lewisjfoster/bouncing-balls/commit/a498ef37747436f8ba80f715245c7610e28b44e9))
+
+
+
 ## [1.3.2](https://github.com/lewisjfoster/bouncing-balls/compare/v1.3.1...v1.3.2) (2020-06-01)
 
 
@@ -31,10 +40,6 @@
 ### Features
 
 * added header with counter ([786e2f0](https://github.com/lewisjfoster/bouncing-balls/commit/786e2f097fff160332cd4bf949a0bcec00f8f9ef))
-
-
-
-## [1.1.1](https://github.com/lewisjfoster/bouncing-balls/compare/v1.1.0...v1.1.1) (2020-05-26)
 
 
 
