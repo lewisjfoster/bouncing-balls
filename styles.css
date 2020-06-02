@@ -1,3 +1,7 @@
+* {
+    box-sizing: border-box;
+}
+
 body {
     margin: 0;
     overflow: hidden;
@@ -11,17 +15,69 @@ body {
     width: 100%;
     height: 100%;
     background-color: #dfe6e9;
+    z-index: -1;
 }
 
 .Header__header___1qRCL {
-    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    box-sizing: border-box;
     width: 100%;
-    text-align: center;
+    padding: 2rem
+}
+
+@media (min-width: 768px) {
+
+.Header__header___1qRCL {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between
+}
+    }
+
+.Header__title___3Wcfe {
+    margin: 0 0 2rem
+}
+
+@media (min-width: 768px) {
+
+.Header__title___3Wcfe {
+        margin: 0
+}
+    }
+
+.Header__button___10iHr {
+    background-color: #000;
+    color: #ecf0f1;
+    padding: 1rem 2rem;
+    border-radius: 0.25rem;
+    font-family: 'Lucida Console', Monaco, monospace;
+    transition: box-shadow 0.25s;
     -webkit-user-select: none;
        -moz-user-select: none;
         -ms-user-select: none;
             user-select: none;
+    text-decoration: none;
+    border: none;
+    width: 100%;
+    text-align: center
 }
+
+.Header__button___10iHr:hover,
+    .Header__button___10iHr:focus,
+    .Header__button___10iHr:active {
+        outline: 0;
+        box-shadow: 0 0 3rem #bdc3c7;
+    }
+
+@media (min-width: 768px) {
+
+.Header__button___10iHr {
+        width: auto
+}
+    }
 
 .BouncyBall__ball___vyjPn {
     position: absolute;
