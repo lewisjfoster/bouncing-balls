@@ -14,12 +14,14 @@ const App = () => {
     };
 
     return (
-        <div className={styles.clickableArea} onClick={addNewBall}>
+        <>
             <Header title={lang.title + bouncyBalls.length} onClick={addNewBall} />
-            {bouncyBalls.map((ball) => (
-                <BouncyBall key={ball.id} initialX={ball.x} initialY={ball.y} />
-            ))}
-        </div>
+            <div className={styles.clickableArea} onClick={addNewBall} data-id="clickable-area">
+                {bouncyBalls.map((ball) => (
+                    <BouncyBall key={ball.id} initialX={ball.x} initialY={ball.y} />
+                ))}
+            </div>
+        </>
     );
 };
 
