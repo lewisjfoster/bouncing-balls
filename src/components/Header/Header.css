@@ -4,6 +4,7 @@
     justify-content: space-between;
     flex-direction: column;
     box-sizing: border-box;
+    user-select: none;
     width: 100%;
     padding: 2rem;
 
@@ -29,7 +30,6 @@
     border-radius: 0.25rem;
     font-family: 'Lucida Console', Monaco, monospace;
     transition: box-shadow 0.25s;
-    user-select: none;
     text-decoration: none;
     border: none;
     width: 100%;

@@ -1,0 +1,22 @@
+:root {
+    /* Colors */
+    --clouds: #ecf0f1;
+    --yellow: #eccc68;
+    --orange: #ff7f50;
+    --red: #ff6b81;
+    --green: #7bed9f;
+    --blue: #70a1ff;
+    --violet: #5352ed;
+
+    /* Sizes */
+    --xx-small: 0.125rem;
+    --x-small: 0.25rem;
+    --small: 0.5rem;
+    --small-plus: 0.75rem;
+    --medium: 1rem;
+    --medium-plus: 1.5rem;
+    --large: 2rem;
+    --x-large: 3rem;
+    --xx-large: 5rem;
+    --xxx-large: 8rem;
+}

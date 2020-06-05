@@ -1,8 +1,10 @@
 import React, { useState, useEffect } from 'react';
 import PropTypes from 'prop-types';
+import cx from 'classnames';
 
 import styles from './BouncyBall.css';
 
+const colors = ['yellow', 'orange', 'red', 'green', 'blue', 'violet'];
 const generateRandomNumber = (max, min) => Math.random() * (max - min) + min;
 
 const BouncyBall = ({ initialX, initialY }) => {
@@ -12,8 +14,10 @@ const BouncyBall = ({ initialX, initialY }) => {
     const [y, setY] = useState(initialY);
     const [ySpeed, setYSpeed] = useState(-generateRandomNumber(5, 10));
 
+    const [color] = useState(colors[Math.round(generateRandomNumber(0, 5))]);
+
     useEffect(() => {
-        const maxY = window.innerHeight - 5;
+        const maxY = window.innerHeight - 8;
 
         const bouncing = setInterval(() => {
             let newXSpeed = xSpeed;
@@ -43,7 +47,7 @@ const BouncyBall = ({ initialX, initialY }) => {
         top: y,
     };
 
-    return <span className={styles.ball} style={spanStyle} />;
+    return <span className={cx(styles.ball, styles[color])} style={spanStyle} />;
 };
 
 BouncyBall.propTypes = {
