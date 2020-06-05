@@ -1,3 +1,12 @@
+# [1.5.0](https://github.com/lewisjfoster/bouncing-balls/compare/v1.4.0...v1.5.0) (2020-06-05)
+
+
+### Features
+
+* added custom css media and properties variables ([5826a7f](https://github.com/lewisjfoster/bouncing-balls/commit/5826a7fbd2e89c6a448ce2192a63c34a23ccb37d))
+
+
+
 # [1.4.0](https://github.com/lewisjfoster/bouncing-balls/compare/v1.3.2...v1.4.0) (2020-06-02)
 
 
@@ -31,15 +40,6 @@
 ### Features
 
 * added github pages config ([a37bab5](https://github.com/lewisjfoster/bouncing-balls/commit/a37bab5c7928628ffa8ce7ad9fdc5b15f1a73be3))
-
-
-
-# [1.2.0](https://github.com/lewisjfoster/bouncing-balls/compare/v1.1.1...v1.2.0) (2020-05-26)
-
-
-### Features
-
-* added header with counter ([786e2f0](https://github.com/lewisjfoster/bouncing-balls/commit/786e2f097fff160332cd4bf949a0bcec00f8f9ef))
 
 
 
