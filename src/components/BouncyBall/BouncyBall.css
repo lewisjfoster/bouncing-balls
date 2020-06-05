@@ -1,7 +1,30 @@
 .ball {
     position: absolute;
     border-radius: 50%;
-    width: 5px;
-    height: 5px;
-    background-color: black;
+    width: var(--small);
+    height: var(--small);
+}
+
+.yellow {
+    background-color: #eccc68;
+}
+
+.orange {
+    background-color: #ff7f50;
+}
+
+.red {
+    background-color: #ff6b81;
+}
+
+.green {
+    background-color: #7bed9f;
+}
+
+.blue {
+    background-color: #70a1ff;
+}
+
+.violet {
+    background-color: #5352ed;
 }
