@@ -1,3 +1,7 @@
+## [1.5.1](https://github.com/lewisjfoster/bouncing-balls/compare/v1.5.0...v1.5.1) (2020-06-08)
+
+
+
 # [1.5.0](https://github.com/lewisjfoster/bouncing-balls/compare/v1.4.0...v1.5.0) (2020-06-05)
 
 
@@ -31,15 +35,6 @@
 ### Bug Fixes
 
 * modified font-family ([a0ceb18](https://github.com/lewisjfoster/bouncing-balls/commit/a0ceb189279001e04ab6cd3d4ee8def1f1144fac))
-
-
-
-# [1.3.0](https://github.com/lewisjfoster/bouncing-balls/compare/v1.2.0...v1.3.0) (2020-05-26)
-
-
-### Features
-
-* added github pages config ([a37bab5](https://github.com/lewisjfoster/bouncing-balls/commit/a37bab5c7928628ffa8ce7ad9fdc5b15f1a73be3))
 
 
 
