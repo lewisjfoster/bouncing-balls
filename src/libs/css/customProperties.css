@@ -1,5 +1,7 @@
 :root {
     /* Colors */
+    --black: #000;
+    --grey: #bdc3c7;
     --clouds: #ecf0f1;
     --yellow: #eccc68;
     --orange: #ff7f50;

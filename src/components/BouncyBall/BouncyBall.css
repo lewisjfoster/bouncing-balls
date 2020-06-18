@@ -6,25 +6,25 @@
 }
 
 .yellow {
-    background-color: #eccc68;
+    background-color: var(--yellow);
 }
 
 .orange {
-    background-color: #ff7f50;
+    background-color: var(--orange);
 }
 
 .red {
-    background-color: #ff6b81;
+    background-color: var(--red);
 }
 
 .green {
-    background-color: #7bed9f;
+    background-color: var(--green);
 }
 
 .blue {
-    background-color: #70a1ff;
+    background-color: var(--blue);
 }
 
 .violet {
-    background-color: #5352ed;
+    background-color: var(--violet);
 }
