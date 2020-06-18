@@ -5,7 +5,13 @@ import cx from 'classnames';
 import styles from './BouncyBall.css';
 
 const colors = ['yellow', 'orange', 'red', 'green', 'blue', 'violet'];
-const generateRandomNumber = (max, min) => Math.random() * (max - min) + min;
+
+const generateRandomNumber = (min, max) => Math.random() * (max - min) + min;
+const generateRandomInteger = (min, max) => {
+    const minCeil = Math.ceil(min);
+    const maxFloor = Math.floor(max);
+    return Math.floor(Math.random() * (maxFloor - minCeil + 1)) + minCeil;
+};
 
 const BouncyBall = ({ initialX, initialY }) => {
     const [x, setX] = useState(initialX);
@@ -14,7 +20,7 @@ const BouncyBall = ({ initialX, initialY }) => {
     const [y, setY] = useState(initialY);
     const [ySpeed, setYSpeed] = useState(-generateRandomNumber(5, 10));
 
-    const [color] = useState(colors[Math.round(generateRandomNumber(0, 5))]);
+    const [color] = useState(colors[generateRandomInteger(0, 5)]);
 
     useEffect(() => {
         const maxY = window.innerHeight - 8;
@@ -27,13 +33,13 @@ const BouncyBall = ({ initialX, initialY }) => {
                 setY(maxY);
                 clearTimeout(bouncing);
             } else {
-                if (y > maxY) {
+                if (y >= maxY) {
                     newXSpeed = xSpeed * 0.8;
                     newYSpeed = -Math.abs(ySpeed) * 0.9;
                 }
 
                 setX(x + xSpeed);
-                setY(y + ySpeed);
+                setY(Math.min(y + ySpeed, maxY));
                 setXSpeed(newXSpeed);
                 setYSpeed(newYSpeed + 0.25);
             }
