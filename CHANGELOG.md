@@ -1,3 +1,12 @@
+## [1.5.2](https://github.com/lewisjfoster/bouncing-balls/compare/v1.5.1...v1.5.2) (2020-06-18)
+
+
+### Bug Fixes
+
+* css props and maxY ([073f29f](https://github.com/lewisjfoster/bouncing-balls/commit/073f29f15c29ba2d452b77c97922370d54ec6145))
+
+
+
 ## [1.5.1](https://github.com/lewisjfoster/bouncing-balls/compare/v1.5.0...v1.5.1) (2020-06-08)
 
 
@@ -26,15 +35,6 @@
 ### Bug Fixes
 
 * corrected readme ([171d914](https://github.com/lewisjfoster/bouncing-balls/commit/171d91464825b048c657eb823210500025ae7e1c))
-
-
-
-## [1.3.1](https://github.com/lewisjfoster/bouncing-balls/compare/v1.3.0...v1.3.1) (2020-05-27)
-
-
-### Bug Fixes
-
-* modified font-family ([a0ceb18](https://github.com/lewisjfoster/bouncing-balls/commit/a0ceb189279001e04ab6cd3d4ee8def1f1144fac))
 
 
 
